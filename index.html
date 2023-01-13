@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: rgb(169, 169, 169);
+        }
+        .container{
+            margin: auto;
+            margin-top: 170px;
+            width: 810px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background-color: rgb(169, 169, 169);
+            text-align: center;
+            line-height: 50px;
+            font-family: sans-serif;
+            white-space: pre;
+        }
+
+        .screen{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: white;
+            text-align: left;
+            line-height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            background-color: rgb(169, 169, 169);
+        }
+
+        .space{
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .block{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .Backspace, .tab{
+            width: 95px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .caps{
+            width: 105px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .enter{
+            width: 90px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .shift{
+            width: 127.5px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .red{
+            background-color: rgb(96, 96, 96);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="screen"></div>
+
+        <div class="row">
+            <div class="block aBackquote">`</div>
+            <div class="block Digit1">1</div>
+            <div class="block Digit2">2</div>
+            <div class="block Digit3">3</div>
+            <div class="block Digit4">4</div>
+            <div class="block Digit5">5</div>
+            <div class="block Digit6">6</div>
+            <div class="block Digit7">7</div>
+            <div class="block Digit8">8</div>
+            <div class="block Digit9">9</div>
+            <div class="block Digit0">0</div>
+            <div class="block aMinus">-</div>
+            <div class="block aEqual">=</div>
+            <div class="Backspace">Backspace</div>
+        </div>
+        
+        <div class="row">
+            <div class="tab">Tab</div>
+            <div class="block KeyQ">q</div>
+            <div class="block KeyW">w</div>
+            <div class="block KeyE">e</div>
+            <div class="block KeyR">r</div>
+            <div class="block KeyT">t</div>
+            <div class="block KeyY">y</div>
+            <div class="block KeyU">u</div>
+            <div class="block KeyI">i</div>
+            <div class="block KeyO">o</div>
+            <div class="block KeyP">p</div>
+            <div class="block aBracketLeft">[</div>
+            <div class="block aBracketRight">]</div>
+            <div class="block aBackslash">\</div>
+        </div>
+        
+        <div class="row">
+            <div class="caps">CapsLock</div>
+            <div class="block KeyA">a</div>
+            <div class="block KeyS">s</div>
+            <div class="block KeyD">d</div>
+            <div class="block KeyF">f</div>
+            <div class="block KeyG">g</div>
+            <div class="block KeyH">h</div>
+            <div class="block KeyJ">j</div>
+            <div class="block KeyK">k</div>
+            <div class="block KeyL">l</div>
+            <div class="block aSemicolon">;</div>
+            <div class="block aQuote">'</div>
+            <div class="enter">Enter</div>
+        </div>
+
+        <div class="row">
+            <div class="shift shift1">Shift</div>
+            <div class="block KeyZ">z</div>
+            <div class="block KeyX">x</div>
+            <div class="block KeyC">c</div>
+            <div class="block KeyV">v</div>
+            <div class="block KeyB">b</div>
+            <div class="block KeyN">n</div>
+            <div class="block KeyM">m</div>
+            <div class="block aComma">,</div>
+            <div class="block aPeriod">.</div>
+            <div class="block aSlash">/</div>
+            <div class="shift shift2">Shift</div>
+        </div>
+
+        <div class="space">Space</div>
+    </div>
+
+   <script src="/main.js"></script>
+</body>
+
+</html>
